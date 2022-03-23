@@ -1,45 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragments.RegisterFragment">
 
-    <Button
-        android:id="@+id/buttonCancel"
-        android:layout_width="181dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="?attr/colorBackgroundFloating"
-        android:text="Cancel"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutcity"
-        tools:ignore="MissingConstraints" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBarRegister"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/back_session"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:title="Create your account" />
+    </com.google.android.material.appbar.AppBarLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layoutName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="187dp"
-        android:layout_height="54dp"
+        android:layout_height="58dp"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="36dp"
         android:layout_marginEnd="5dp"
         android:hint="Name"
         app:layout_constraintEnd_toStartOf="@+id/layoutLastname"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
         app:startIconDrawable="@drawable/ic_baseline_person_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputName"
-            android:inputType="textPersonName"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:inputType="textPersonName" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,23 +48,22 @@
         android:id="@+id/layoutLastname"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="180dp"
-        android:layout_height="54dp"
+        android:layout_height="58dp"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="36dp"
         android:layout_marginEnd="30dp"
         android:hint="Last name"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/layoutName"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
         app:startIconDrawable="@drawable/ic_baseline_person_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputLastName"
-            android:inputType="textPersonName"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:inputType="textPersonName" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,10 +71,10 @@
         android:id="@+id/layoutEmail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="380dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="61dp"
+        android:layout_height="58dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="61dp"
         android:hint="Email"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,9 +85,9 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputEmail"
-            android:inputType="textEmailAddress"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -95,10 +95,10 @@
         android:id="@+id/inputPass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="380dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="61dp"
+        android:layout_height="58dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="61dp"
         android:hint="@string/textPassword"
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,9 +109,9 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputPassword"
-            android:inputType="textPassword"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -119,10 +119,10 @@
         android:id="@+id/layoutPhone"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="380dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="61dp"
+        android:layout_height="58dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="61dp"
         android:hint="Number phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,9 +132,9 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputPhone"
-            android:inputType="phone"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:inputType="phone" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -143,10 +143,10 @@
         android:id="@+id/layoutDate"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="380dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="61dp"
+        android:layout_height="58dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="61dp"
         android:hint="Date of birth"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -156,37 +156,17 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputDate"
-            android:inputType="date"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:inputType="date" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-   <!-- <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/radioGender"
-        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="374dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutDate">
-
-        <AutoCompleteTextView
-            android:id="@+id/selectGender"
-            android:hint="Choose gender"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="none" />
-
-    </com.google.android.material.textfield.TextInputLayout> -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/radioGender"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="374dp"
-        android:layout_height="47dp"
+        android:layout_height="58dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:hint="Gender"
@@ -210,7 +190,7 @@
         android:id="@+id/layoutCountry"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="380dp"
-        android:layout_height="54dp"
+        android:layout_height="58dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="61dp"
@@ -225,8 +205,7 @@
             android:id="@+id/inputCountry"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -234,7 +213,7 @@
         android:id="@+id/layoutcity"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="187dp"
-        android:layout_height="54dp"
+        android:layout_height="58dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:hint="City"
@@ -256,7 +235,7 @@
         android:id="@+id/layoutAddress"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="187dp"
-        android:layout_height="54dp"
+        android:layout_height="58dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:hint="Address"
@@ -268,18 +247,31 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputAddress"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="183dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="?attr/colorBackgroundFloating"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutcity"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonSave"
-        android:layout_width="181dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="216dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="180dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="?attr/actionModeSplitBackground"
         android:text="Register"
         android:textAlignment="center"

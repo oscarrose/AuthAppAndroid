@@ -5,8 +5,10 @@
       <map>
         <entry key="../../../../../../../layout/custom_preview.xml" value="0.1046875" />
         <entry key="app/src/main/res/drawable/arrow_circle.xml" value="0.1515" />
+        <entry key="app/src/main/res/drawable/ic_search_24dp.xml" value="0.244" />
         <entry key="app/src/main/res/layout-v31/activity_main_session.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1956521739130435" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_main_session.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main_username.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.10520833333333333" />
@@ -16,8 +18,23 @@
         <entry key="app/src/main/res/layout/content_register.xml" value="0.10520833333333333" />
         <entry key="app/src/main/res/layout/dropdown_item.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/layout/dropdown_menu.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/fragment_add_task.xml" value="0.19047619047619047" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.1956521739130435" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.22780797101449277" />
+        <entry key="app/src/main/res/layout/fragment_profile_user.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_recover_password.xml" value="0.22780797101449277" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_registrer_user.xml" value="0.1956521739130435" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.10520833333333333" />
+        <entry key="app/src/main/res/layout/fragment_task_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_update_task.xml" value="0.14221014492753623" />
+        <entry key="app/src/main/res/layout/task.xml" value="0.649671052631579" />
+        <entry key="app/src/main/res/layout/task_list_items.xml" value="0.17889492753623187" />
+        <entry key="app/src/main/res/menu/bootom_menu.xml" value="0.24375" />
+        <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.24375" />
+        <entry key="app/src/main/res/menu/options_card_task.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/menu/top_app_bar.xml" value="0.24583333333333332" />
       </map>
     </option>
   </component>
@@ -26,5 +43,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.125" />
+      </ProjectState>
+    </option>
   </component>
 </project>
